@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
+    <xsl:output method="text" omit-xml-declaration="yes"/>
+
+    <xsl:template match="/">
+      <xsl:apply-templates select="ORDER_INFO"/>
+    </xsl:template>
+
+    <xsl:template match="ORDER_INFO">
+Customers&apos; Order information
+        <xsl:apply-templates select="CUSTOMER"/>
+        <xsl:apply-templates select="PRICE_SUMMARY"/>
+    </xsl:template>
+
+    <xsl:template match="CUSTOMER">
+Customer id:<xsl:value-of select="ID"/>
+Customer group is &apos;<xsl:value-of select="@GROUP"/>&apos;
+          <xsl:apply-templates select="SERVICE_ORDERS"/>
+    </xsl:template>
+
+
+    <xsl:template match="SERVICE_ORDERS">
+Order:
+      <xsl:apply-templates select="ORDER"/>
+
+Total: <xsl:value-of select="sum(./ORDER/PRICE)"/> euros
+    </xsl:template>
+
+    <xsl:template match="ORDER">
+* <xsl:value-of select="substring(concat('               ', PRODUCT_ID), 
+  string-length(concat('               ', PRODUCT_ID))-14, 
+  string-length(concat('               ', PRODUCT_ID)))"/> - <xsl:value-of select="substring(concat(PRICE, '     '), 1, 4)"/>
+    </xsl:template>
+
+    <xsl:template match="PRICE_SUMMARY">
+
+
+Product sales summary
+      <xsl:apply-templates select="PRODUCT"/>
+    </xsl:template>
+
+    <xsl:template match="PRODUCT">
+* <xsl:value-of select="substring(concat(NAME, ' - net sales:                 '), 1, 30)"/><xsl:value-of select="SUM"/> euros</xsl:template>
+</xsl:stylesheet>
+
+

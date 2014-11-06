@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<employee id="0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="NewXMLSchema.xsd">
+  <name>name</name>
+  <salary>0.0</salary>
+  <designation>designation</designation>
+  <address>
+    <city>city</city>
+    <line1>line1</line1>
+    <line2>line2</line2>
+    <state>state</state>
+    <zipcode>0</zipcode>
+  </address>
+</employee>

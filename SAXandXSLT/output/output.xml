@@ -1,0 +1,40 @@
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>Customers' Order information</TITLE>
+</HEAD>
+<BODY>
+<H1>Customers' Order information</H1>
+<H2>Customer id:234</H2>
+      Customer group is 'exclusive'<BR>
+<BR>
+<BILLABLE_ORDERSs>
+      Order:
+      <UL>
+<LI>1231 - 100 euros</LI>
+<LI>2001 - 20 euros</LI>
+</UL>
+      Total: 120 euros
+    </BILLABLE_ORDERSs>
+<H2>Customer id:111</H2>
+      Customer group is 'regular'<BR>
+<BR>
+<BILLABLE_ORDERSs>
+      Order:
+      <UL>
+<LI>1001 - 10 euros</LI>
+<LI>1231 - 10 euros</LI>
+<LI>2001 - 20 euros</LI>
+</UL>
+      Total: 40 euros
+    </BILLABLE_ORDERSs>
+<H2>Customer id:112</H2>
+      Customer group is 'regular'<BR>
+<BR>
+<BILLABLE_ORDERSs>
+      Order:
+      <UL></UL>
+      Total: 0 euros
+    </BILLABLE_ORDERSs>
+</BODY>
+</HTML>

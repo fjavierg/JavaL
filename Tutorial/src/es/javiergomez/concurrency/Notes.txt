@@ -1,0 +1,20 @@
+ConsumerProducer example of synchronized methods in multithreading
+
+It creates a message box (Drop) and two threads Producer and Consumer (implementing runnable)
+
+Producer puts messages in Drop using a synchronized method (Drop object lock is set during method execution)
+Consumers gets messages from Drop also using synchronized method
+
+
+Singleton. Example of volatile vars, synchronized block of code and double checking 
+
+In order to instanciate the Singleton object (lazy loading) getInstance checks if it already exists
+check should be done in a volatile var to ensure that it's updated inmediately after write by any thread
+If not instantiated start a synchronixed block of code, check again the variable (to avoid race conditions) and create the object
+
+
+JoyDemo  Wait, notify, notifyAll example
+
+Launches a Notifier and several receivers. Receivers Threads wait for joy notifications, Notifier sleeps 5s and send notification to all threads waiting for joy
+
+

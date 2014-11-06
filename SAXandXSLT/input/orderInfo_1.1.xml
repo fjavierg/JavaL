@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+
+<ORDER_INFO>
+  <CUSTOMER GROUP="exclusive">
+    <ID>234</ID>
+    <SERVICE_ORDERS>
+      <ORDER>
+        <PRODUCT_ID>1231</PRODUCT_ID>     
+        <PRICE>100</PRICE>
+        <TIMESTAMP>2004-06-05:14:40:05</TIMESTAMP>
+      </ORDER>
+      <ORDER>
+        <PRODUCT_ID>2001</PRODUCT_ID>     
+        <PRICE>20</PRICE>
+        <TIMESTAMP>2004-06-12:15:00:44</TIMESTAMP>
+      </ORDER>
+    </SERVICE_ORDERS>
+  </CUSTOMER>
+  <CUSTOMER GROUP="regular">
+    <ID>111</ID>
+    <SERVICE_ORDERS>
+      <ORDER>
+        <PRODUCT_ID>1001</PRODUCT_ID>     
+        <PRICE>10</PRICE>
+        <TIMESTAMP>2004-06-07:10:00:56</TIMESTAMP>
+      </ORDER>
+      <ORDER>
+        <PRODUCT_ID>1231</PRODUCT_ID>     
+        <PRICE>10</PRICE>
+        <TIMESTAMP>2004-06-01:09:42:15</TIMESTAMP>
+      </ORDER>
+      <ORDER>
+        <PRODUCT_ID>2001</PRODUCT_ID>     
+        <PRICE>20</PRICE>
+        <TIMESTAMP>2004-06-16:22:11:19</TIMESTAMP>
+      </ORDER>
+    </SERVICE_ORDERS>
+  </CUSTOMER>
+  <CUSTOMER GROUP="regular">
+    <ID>112</ID>
+    <SERVICE_ORDERS>
+    </SERVICE_ORDERS>
+  </CUSTOMER>
+</ORDER_INFO>
+
+
