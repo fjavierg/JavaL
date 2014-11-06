@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<soap:Body>
+	<ResolveIPResponse xmlns="http://ws.cdyne.com/">
+		<ResolveIPResult>
+			<City>Madrid</City>
+			<StateProvince>29</StateProvince>
+			<Country>Spain</Country>
+			<Organization />
+			<Latitude>40.4086</Latitude>
+			<Longitude>-3.6922</Longitude>
+			<AreaCode>0</AreaCode>
+			<TimeZone />
+			<HasDaylightSavings>false</HasDaylightSavings>
+			<Certainty>90</Certainty>
+			<RegionName />
+			<CountryCode>ES</CountryCode>
+		</ResolveIPResult>
+	</ResolveIPResponse>
+</soap:Body>
+</soap:Envelope>
